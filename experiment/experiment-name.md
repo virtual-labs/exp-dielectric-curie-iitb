@@ -1,1 +1,1 @@
-## Experiment name
+## Dielectric constant and Curie Temperature Measurement
