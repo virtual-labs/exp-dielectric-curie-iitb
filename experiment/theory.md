@@ -21,4 +21,4 @@
 
    <img src="./images/theo_fig2.png" style='width: 50%; margin-left:25%'>
    <img src="./images/theo_fig3.png" style='width: 60%; margin-left:25%'>
-</div>
+</div><script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>

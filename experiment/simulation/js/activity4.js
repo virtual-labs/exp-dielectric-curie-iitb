@@ -32,9 +32,9 @@ function activity4() {
     plot_data();
 }
 function verify_curie_temperature() {
-    let inp = document.getElementById('exp-value');
-    let btn = document.getElementById('l-btn');
-    let sp = document.getElementById('th-value');
+    let inp = (document.getElementById('exp-value'));
+    let btn = (document.getElementById('l-btn'));
+    let sp = (document.getElementById('th-value'));
     if (selected_material_index == 0) {
         btn.style.display = 'none';
         sp.innerHTML = `and the standard value of Curie temperatuer for ${materials[selected_material_index][0]} is 120<sup>o</sup>C`;
@@ -53,11 +53,11 @@ function plot_data() {
         temperature_obs.push(obs_data[i][1]);
     }
     var ctx = document.getElementById('plot-id');
-    ctx.style.backgroundColor = "white";
-    ctx.style.marginTop = "5px";
-    ctx.style.marginLeft = "10%";
-    ctx.style.padding = "10px";
-    ctx.style.borderRadius = "8px";
+    ctx.style.backgroundColor = 'white';
+    ctx.style.marginTop = '5px';
+    ctx.style.marginLeft = '10%';
+    ctx.style.padding = '10px';
+    ctx.style.borderRadius = '8px';
     if (typeof chart != 'undefined') {
         chart.destroy();
     }
@@ -75,13 +75,9 @@ function plot_data() {
                     fill: false,
                     borderColor: 'blue',
                     tension: 0.3,
-                    showLine: true
-                    // yAxisID: 'A',
-                    // borderWidth: 1,
-                    // borderColor: "green",
-                    // backgroundColor: "rgba(34, 139, 34, 0.5)",
+                    showLine: true,
                 },
-            ]
+            ],
         },
         options: {
             maintainAspectRatio: true,
@@ -90,16 +86,16 @@ function plot_data() {
                     title: {
                         display: true,
                         text: 'Dielectric Contant',
-                        font: { size: 14, weight: 'bold' }
-                    }
+                        font: { size: 14, weight: 'bold' },
+                    },
                 },
                 x: {
                     title: {
                         display: true,
                         text: 'Temperature',
-                        font: { size: 14, weight: 'bold' }
-                    }
-                }
+                        font: { size: 14, weight: 'bold' },
+                    },
+                },
             },
             plugins: {
                 title: {
@@ -107,9 +103,9 @@ function plot_data() {
                     text: `Dielectric Constant vs Temperature`,
                     font: { size: 18 },
                 },
-                legend: { labels: { font: { size: 14, weight: 'bold' } } }
+                legend: { labels: { font: { size: 14, weight: 'bold' } } },
             },
-        }
+        },
     });
 }
 // activity4();

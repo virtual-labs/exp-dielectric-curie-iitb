@@ -304,9 +304,9 @@ function show_rp() {
 }
 // current activity functions
 function select_material() {
-    let dd_ele = document.getElementById('material-dd');
-    let parent = document.getElementById('start-first');
-    let next_ele = document.getElementById('start-second');
+    let dd_ele = (document.getElementById('material-dd'));
+    let parent = (document.getElementById('start-first'));
+    let next_ele = (document.getElementById('start-second'));
     if (dd_ele.value != '') {
         selected_material_index = parseInt(dd_ele.value);
         parent.remove();
@@ -318,11 +318,11 @@ function select_material() {
     }
 }
 function show_measurement() {
-    let thickness = document.getElementById('m-thickness');
-    let diameter = document.getElementById('m-diameter');
-    let area = document.getElementById('m-area');
-    let current_btn = document.getElementById('reading-btn');
-    let next_btn = document.getElementById('set-up-btn');
+    let thickness = (document.getElementById('m-thickness'));
+    let diameter = (document.getElementById('m-diameter'));
+    let area = (document.getElementById('m-area'));
+    let current_btn = (document.getElementById('reading-btn'));
+    let next_btn = (document.getElementById('set-up-btn'));
     right_pin.stpt.x = right_pin.stpt.x + 110;
     scene1.draw();
     thickness.value = materials[selected_material_index][1].toString();
@@ -331,5 +331,5 @@ function show_measurement() {
     current_btn.style.display = 'none';
     next_btn.style.display = 'block';
 }
-activity2();
+// activity2();
 //# sourceMappingURL=activity2.js.map
