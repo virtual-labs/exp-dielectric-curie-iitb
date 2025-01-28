@@ -126,8 +126,8 @@ function activity2() {
 	left_pin = new Chemistry.Custome_image(
 		left_vc,
 		new Chemistry.Point(883, 670),
-		157*0.5,
-		860*0.5,
+		157 * 0.5,
+		860 * 0.5,
 		canvas
 	);
 	scene1.add(left_pin);
@@ -135,8 +135,8 @@ function activity2() {
 	right_pin = new Chemistry.Custome_image(
 		right_vc,
 		new Chemistry.Point(950, 670),
-		157*0.5,
-		860*0.5,
+		157 * 0.5,
+		860 * 0.5,
 		canvas
 	);
 	scene1.add(right_pin);
@@ -144,8 +144,8 @@ function activity2() {
 	pill_img = new Chemistry.Custome_image(
 		pill,
 		new Chemistry.Point(975, 430),
-		600*0.2,
-		200*0.2,
+		600 * 0.2,
+		200 * 0.2,
 		canvas
 	);
 	scene1.add(pill_img);
@@ -412,15 +412,20 @@ function show_rp() {
 	bsOffcanvas.show();
 }
 
- 
 // current activity functions
 
 function select_material() {
-	let dd_ele: HTMLSelectElement = <HTMLSelectElement> document.getElementById('material-dd');
-	let parent: HTMLDivElement = <HTMLDivElement> document.getElementById('start-first');
-	let next_ele: HTMLDivElement = <HTMLDivElement> document.getElementById('start-second');
+	let dd_ele: HTMLSelectElement = <HTMLSelectElement>(
+		document.getElementById('material-dd')
+	);
+	let parent: HTMLDivElement = <HTMLDivElement>(
+		document.getElementById('start-first')
+	);
+	let next_ele: HTMLDivElement = <HTMLDivElement>(
+		document.getElementById('start-second')
+	);
 
-	if(dd_ele.value != '') {
+	if (dd_ele.value != '') {
 		selected_material_index = parseInt(dd_ele.value);
 		parent.remove();
 		next_ele.style.display = 'block';
@@ -431,12 +436,22 @@ function select_material() {
 }
 
 function show_measurement() {
-	let thickness: HTMLInputElement = <HTMLInputElement> document.getElementById('m-thickness');
-	let diameter: HTMLInputElement = <HTMLInputElement> document.getElementById('m-diameter');
-	let area: HTMLInputElement = <HTMLInputElement> document.getElementById('m-area');
-	
-	let current_btn: HTMLButtonElement = <HTMLButtonElement> document.getElementById('reading-btn');
-	let next_btn: HTMLButtonElement = <HTMLButtonElement> document.getElementById('set-up-btn');
+	let thickness: HTMLInputElement = <HTMLInputElement>(
+		document.getElementById('m-thickness')
+	);
+	let diameter: HTMLInputElement = <HTMLInputElement>(
+		document.getElementById('m-diameter')
+	);
+	let area: HTMLInputElement = <HTMLInputElement>(
+		document.getElementById('m-area')
+	);
+
+	let current_btn: HTMLButtonElement = <HTMLButtonElement>(
+		document.getElementById('reading-btn')
+	);
+	let next_btn: HTMLButtonElement = <HTMLButtonElement>(
+		document.getElementById('set-up-btn')
+	);
 
 	right_pin.stpt.x = right_pin.stpt.x + 110;
 	scene1.draw();
@@ -449,4 +464,4 @@ function show_measurement() {
 	next_btn.style.display = 'block';
 }
 
-activity2();
+// activity2();
