@@ -8,7 +8,7 @@ var cc = (document.getElementById('pannelcreate'));
 var pp = new Pannel(cc);
 pp.addoffcanvas(3);
 var act1_btn = document.createElement('div');
-act1_btn.innerHTML = `<button id="panel1_btn" class="btn btn-primary" onclick="move_to_activity3()">Next</button>`;
+act1_btn.innerHTML = `<button id="panel1_btn" class="btn btn-primary" onclick="move_to_activity2()">Next</button>`;
 var act1_start_button = document.createElement('div');
 act1_start_button.innerHTML = `<button id="panel1_btn" class="btn btn-primary" onclick="start_act1();">Start</button>`;
 function start_act1() {
@@ -18,10 +18,10 @@ function start_act1() {
     a1_random_questions();
     a1_display_current_question();
 }
-function move_to_activity3() {
+function move_to_activity2() {
     document.getElementById('panel1_btn').remove();
     canvas.removeEventListener('click', a1_mouseclick);
-    activity3();
+    activity2();
 }
 //varibles related to activity 1
 var question = [];
@@ -128,7 +128,7 @@ function a1_load_questions() { }
     });
     question.push({
         srno: 2,
-        question: "Select <span style='color: #018fc3'> Chamber </span>",
+        question: "Select <span style='color: #018fc3'> Sample Chamber </span>",
         ans: 'Chamber',
         hint: ['cylindrical in shape', '', ''],
     });
@@ -170,7 +170,7 @@ function load_higlighted_images() {
     ];
     a1_labels = [
         new Chemistry.Text('Vernier scale', new Chemistry.Point(250, 300), canvas),
-        new Chemistry.Text('Chamber', new Chemistry.Point(850, 280), canvas),
+        new Chemistry.Text('Sample Chamber', new Chemistry.Point(800, 280), canvas),
         new Chemistry.Text('Capacitance and temperature panel', new Chemistry.Point(1300, 300), canvas),
     ];
 }
@@ -308,7 +308,7 @@ function a1_change_question() {
         global_score = total_score;
         const act2 = (document.createElement('input'));
         act2.type = 'button';
-        act2.onclick = activity3;
+        act2.onclick = activity2;
         //document.getElementById("root").appendChild(act2);
         act2.value = 'Next';
         act2.className = 'btn btn-success';
