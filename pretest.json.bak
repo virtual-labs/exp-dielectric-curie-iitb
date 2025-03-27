@@ -1,0 +1,47 @@
+[
+   {
+      "question": "What is the dielectric constant?",
+      "qid": 1,
+      "option_a": "The ratio of the electric field to the magnetic field",
+      "option_b": "The measure of a material's ability to store electrical energy in an electric field",
+      "option_c": "The resistance offered by a material to current flow",
+      "option_d": "The frequency at which a material resonates",
+      "correct_option": "b"
+   },
+   {
+      "question": "What property defines a ferroelectric material?",
+      "qid": 2,
+      "option_a": "It has zero electrical conductivity",
+      "option_b": "It has a low thermal conductivity",
+      "option_c": "It is non-magnetic and does not respond to an electric field",
+      "option_d": "It possesses a permanent electric dipole that can be reversed by an external electric field",
+      "correct_option": "d"
+   },
+   {
+      "question": "What is the Curie temperature?",
+      "qid": 3,
+      "option_a": "The temperature at which a ferroelectric material loses its ferroelectric properties and becomes paraelectric",
+      "option_b": "The temperature at which a ferroelectric material becomes superconductive",
+      "option_c": "The melting point of the ceramic material",
+      "option_d": "The point at which the material becomes transparent",
+      "correct_option": "a"
+   },
+   {
+      "question": "Which of the following materials is commonly known to be ferroelectric?",
+      "qid": 4,
+      "option_a": "Silicon dioxide (SiO<sub>2</sub>)",
+      "option_b": "Lead zirconate titanate (PZT)",
+      "option_c": "Aluminum oxide (Al<sub>2</sub>O<sub>3</sub>)",
+      "option_d": "Magnesium oxide (MgO)",
+      "correct_option": "b"
+   },
+   {
+      "question": "What is the significance of measuring the dielectric constant in ferroelectric ceramics?",
+      "qid": 5,
+      "option_a": "To measure the electrical resistance of the ceramic",
+      "option_b": "To determine the thermal stability of the ceramic",
+      "option_c": "To understand the ceramic’s ability to store electrical energy",
+      "option_d": "To find the magnetic properties of the ceramic",
+      "correct_option": "c"
+   }
+]

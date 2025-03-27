@@ -1,0 +1,47 @@
+[
+   {
+      "question": "What is observed when the temperature of a ferroelectric ceramic exceeds its Curie temperature?",
+      "qid": 1,
+      "option_a": "The material becomes superconductive",
+      "option_b": "The dielectric constant drops and the material becomes paraelectric",
+      "option_c": "The dielectric constant increases exponentially",
+      "option_d": "The material becomes magnetic",
+      "correct_option": "b"
+   },
+   {
+      "question": "How does the dielectric constant of a ferroelectric ceramic behave near the Curie temperature?",
+      "qid": 2,
+      "option_a": "It remains constant",
+      "option_b": "It decreases sharply",
+      "option_c": "It peaks and then decreases as temperature continues to rise",
+      "option_d": "It oscillates periodically",
+      "correct_option": "c"
+   },
+   {
+      "question": "During the experiment, which factor most affects the measurement of the dielectric constant?",
+      "qid": 3,
+      "option_a": "The color of the ceramic",
+      "option_b": "The applied frequency of the electric field",
+      "option_c": "The material’s magnetic properties",
+      "option_d": "The thickness of the ceramic",
+      "correct_option": "b"
+   },
+   {
+      "question": "Why is it important to precisely measure the Curie temperature of a ferroelectric material?",
+      "qid": 4,
+      "option_a": "To determine its optical properties",
+      "option_b": "To improve its magnetic response",
+      "option_c": "To evaluate its tensile strength",
+      "option_d": "To identify the temperature at which the material’s ferroelectric properties cease",
+      "correct_option": "d"
+   },
+   {
+      "question": "What does the experiment reveal about the relationship between temperature and the dielectric constant of ferroelectric ceramics?",
+      "qid": 5,
+      "option_a": "The dielectric constant first increases, peaks near the Curie temperature, and then decreases",
+      "option_b": "The dielectric constant decreases uniformly with temperature",
+      "option_c": "They are unrelated",
+      "option_d": "The dielectric constant increases linearly with temperature",
+      "correct_option": "a"
+   }
+]
